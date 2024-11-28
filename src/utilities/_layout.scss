@@ -1,0 +1,150 @@
+/**
+ * New block formatting context
+ */
+
+.layout-nbfc {
+  overflow: hidden !important;
+}
+
+/**
+ * Position on top
+ */
+
+.layout-zbump {
+  position: relative;
+  z-index: 1;
+}
+
+/**
+ * Display
+ */
+
+.layout-block {
+  @extend .d-block;
+}
+
+.layout-inline-block {
+  @extend .d-inline-block;
+}
+
+.layout-inline {
+  @extend .d-inline;
+}
+
+.layout-flex {
+  @extend .d-flex;
+}
+
+.layout-column {
+  @extend .flex-column;
+}
+
+.layout-row {
+  @extend .flex-row;
+}
+
+.layout-grow {
+  @extend .flex-grow-1;
+}
+
+.layout-shrink {
+  @extend .flex-shrink-1;
+}
+
+.layout-no-flex {
+  flex: 0 0 auto !important;
+}
+
+/* <3 */
+
+.hidden {
+  display: none;
+}
+
+/**
+ * Clear
+ */
+
+.clear-both {
+  clear: both;
+}
+
+.clear-left {
+  clear: left;
+}
+
+.clear-right {
+  clear: right;
+}
+
+/**
+ * Size
+ */
+
+.layout-full {
+  width: 100%;
+}
+
+/**
+ * Position
+ */
+
+.pos-static {
+  position: static;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+.pos-fixed {
+  position: fixed;
+}
+
+/**
+ * Vertical alignment
+ */
+
+.align-top {
+  vertical-align: top !important;
+}
+
+.align-middle {
+  vertical-align: middle !important;
+}
+
+.align-bottom {
+  vertical-align: bottom !important;
+}
+
+/**
+ * Delimiters
+ */
+
+.delimiter-xs {
+  border-top: solid 2px $body-bg !important;
+}
+
+.delimiter-sm {
+  border-top: solid ($spacer * .5) $body-bg !important;
+}
+
+.delimiter-lg {
+  border-top: solid ($spacer * 1) $body-bg !important;
+}
+
+.delimiter-xl {
+  border-top: solid ($spacer * 1.5) $body-bg !important;
+}
+
+/**
+ * Todo: replace or extend the new .visually-hidden from BS5
+ */
+
+.sr-only {
+  @include visually-hidden;
+}
